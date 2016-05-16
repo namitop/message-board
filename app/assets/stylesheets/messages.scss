@@ -1,3 +1,17 @@
 // Place all the styles related to the messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.text{
+  margin: 10px;
+}
+
+.panel-body{
+  word-break: break-all;
+}
+
+#space_message_btn{
+  display: table-cell;
+  vertical-align: middle;
+	text-align: center;
+}
