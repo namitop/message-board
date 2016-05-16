@@ -10,12 +10,12 @@
     <% @messages.reverse_each do |message| %>
       <div class="panel panel-primary">
         <div class="panel-heading">
-          <%= message.name %>
+            <%= message.name %>(age:<%= message.age %>)
+            <%= link_to "edit", edit_message_path(message), class: "btn btn-info" %>
+            <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' }, class: "btn btn-danger" %>
         </div>
         <div class="panel-body">
           "<%= message.body %>"
-          (<%= link_to "edit", edit_message_path(message) %>
-          <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>)
         </div>
       </div>
       <br>
